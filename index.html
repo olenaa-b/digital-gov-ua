@@ -3,64 +3,278 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Цифрові сервіси та ініціативи Вінницької міської територіальної громади.">
-  <meta name="theme-color" content="#e63323">
-  <title>Цифрова Вінниця</title>
+  <meta name="description" content="Офіційний каталог електронних сервісів Вінницької міської територіальної громади: транспорт, медицина, адміністративні послуги, громадська участь, відкриті дані та міські мапи.">
+  <meta name="theme-color" content="#b51f2c">
+  <title>Цифрова Вінниця — електронні сервіси громади</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#services">Перейти до електронних сервісів</a>
+
   <header class="site-header">
-    <a class="brand" href="https://www.vmr.gov.ua/" aria-label="Офіційний сайт Вінницької міської ради">
-      <span class="brand-mark" aria-hidden="true">V</span>
-      <span>
-        <strong>Вінницька міська рада</strong>
-        <small>Офіційний інформаційний ресурс</small>
-      </span>
-    </a>
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Цифрова Вінниця — головна сторінка">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-copy">
+          <strong>Цифрова Вінниця</strong>
+          <small>Електронні сервіси громади</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Основна навігація">
+        <a href="#services">Усі сервіси</a>
+        <a href="https://www.vmr.gov.ua/Digital-Vinnytsia">Цифровий простір</a>
+        <a class="nav-accent" href="https://www.vmr.gov.ua/">Сайт міської ради</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">digital.gov.ua</p>
-        <h1>Цифрова Вінниця</h1>
-        <p class="lead">Цифрові сервіси, відкриті дані та сучасні технологічні рішення для мешканців Вінницької міської територіальної громади.</p>
-        <a class="primary-link" href="https://www.vmr.gov.ua/">Перейти на сайт міської ради</a>
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow">Офіційний міський ресурс</p>
+        <h1 id="page-title">Міські сервіси — в одному місці</h1>
+        <p class="intro-text">Транспорт, запис до лікаря, адміністративні послуги, петиції, відкриті дані та інші цифрові можливості Вінницької міської територіальної громади.</p>
+        <div class="intro-actions">
+          <a class="button button-primary" href="#services">Обрати сервіс</a>
+          <a class="button button-secondary" href="https://www.vmr.gov.ua/ServiceCategory?termContentItemId=4sry1d2pns2d24fc72gvvcbxc2">Електронні сервіси на vmr.gov.ua</a>
+        </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span>
+
+      <aside class="misto-card" aria-labelledby="misto-title">
+        <div class="misto-topline">
+          <span class="official-label">Муніципальний застосунок</span>
+          <span class="misto-wordmark" aria-hidden="true">MISTO</span>
+        </div>
+        <h2 id="misto-title">Вінниця у вашому смартфоні</h2>
+        <p>Рух транспорту, міські сповіщення, мапи укриттів, поповнення муніципальної картки та корисні сервіси.</p>
+        <a class="misto-link" href="https://www.vmr.gov.ua/munitsypalnyi-zastosunok-misto">Дізнатися більше та завантажити <span aria-hidden="true">→</span></a>
+      </aside>
+    </section>
+
+    <nav class="category-nav" aria-label="Категорії сервісів">
+      <a href="#transport">Транспорт</a>
+      <a href="#health">Здоров’я</a>
+      <a href="#city-services">Міські послуги</a>
+      <a href="#participation">Громадська участь</a>
+      <a href="#data">Дані та мапи</a>
+      <a href="#support">Допомога місту</a>
+    </nav>
+
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Електронні ресурси</p>
+          <h2 id="services-title">Оберіть потрібний напрям</h2>
+        </div>
+        <p>Посилання ведуть безпосередньо на офіційні міські та партнерські платформи.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" id="transport">
+          <div class="card-heading">
+            <span class="card-number" aria-hidden="true">01</span>
+            <div>
+              <p class="card-kicker">Щоденні поїздки</p>
+              <h3>Транспорт</h3>
+            </div>
+          </div>
+          <ul class="service-links">
+            <li>
+              <a href="https://map.et.vn.ua/">
+                <span><strong>Транспорт онлайн</strong><small>Відстеження руху громадського транспорту на мапі</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://et.vn.ua/">
+                <span><strong>Муніципальна картка вінничанина</strong><small>Поповнення картки, особистий кабінет та інформація</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://et.vn.ua/order-card">
+                <span><strong>Замовити транспортну картку</strong><small>Оформлення нової муніципальної картки</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="service-card" id="health">
+          <div class="card-heading">
+            <span class="card-number" aria-hidden="true">02</span>
+            <div>
+              <p class="card-kicker">Медичні сервіси</p>
+              <h3>Охорона здоров’я</h3>
+            </div>
+          </div>
+          <ul class="service-links">
+            <li>
+              <a href="https://de.vmr.gov.ua/">
+                <span><strong>Персональний кабінет пацієнта</strong><small>Запис до лікаря та доступ до персонального кабінету</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.vmr.gov.ua/personalnyi-kabinet-patsiienta">
+                <span><strong>Як отримати доступ</strong><small>Інструкція для користувачів кабінету пацієнта</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="service-card" id="city-services">
+          <div class="card-heading">
+            <span class="card-number" aria-hidden="true">03</span>
+            <div>
+              <p class="card-kicker">Послуги онлайн</p>
+              <h3>Міські та адміністративні послуги</h3>
+            </div>
+          </div>
+          <ul class="service-links">
+            <li>
+              <a href="https://www.vmr.gov.ua/Transparent">
+                <span><strong>ЦНАП «Прозорий офіс»</strong><small>Перелік послуг, контакти та перевірка стану звернення</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.vmr.gov.ua/reiestratsiia-do-dytiachoho-sadochku">
+                <span><strong>Реєстрація до дитячого садочка</strong><small>Подання та перевірка електронної заявки</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.vmr.gov.ua/oplata-komunalnykh-posluh-ta-podatkiv">
+                <span><strong>Комунальні послуги та податки</strong><small>Перегляд нарахувань і перехід до оплати</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="service-card" id="participation">
+          <div class="card-heading">
+            <span class="card-number" aria-hidden="true">04</span>
+            <div>
+              <p class="card-kicker">Ваш голос важливий</p>
+              <h3>Громадська участь</h3>
+            </div>
+          </div>
+          <ul class="service-links">
+            <li>
+              <a href="https://petition.e-dem.ua/vinnytsia">
+                <span><strong>Електронні петиції E-DEM</strong><small>Створити або підтримати місцеву петицію</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://consult.e-dem.ua/0510100000">
+                <span><strong>Електронні консультації</strong><small>Опитування та обговорення міських рішень</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.vmr.gov.ua/zvernennia-hromadian">
+                <span><strong>Звернення громадян</strong><small>Подати офіційне електронне звернення до міської ради</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="service-card" id="data">
+          <div class="card-heading">
+            <span class="card-number" aria-hidden="true">05</span>
+            <div>
+              <p class="card-kicker">Відкрите місто</p>
+              <h3>Дані та інтерактивні мапи</h3>
+            </div>
+          </div>
+          <ul class="service-links">
+            <li>
+              <a href="https://map.vmr.gov.ua/">
+                <span><strong>Геопортал Вінницької громади</strong><small>Міські об’єкти, тематичні шари, укриття та звернення</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://opendata.gov.ua/">
+                <span><strong>Портал відкритих даних Вінниці</strong><small>Набори даних міської ради у відкритих форматах</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.vmr.gov.ua/open-data">
+                <span><strong>Про відкриті дані</strong><small>Політика, документи та інформація для користувачів</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="service-card" id="support">
+          <div class="card-heading">
+            <span class="card-number" aria-hidden="true">06</span>
+            <div>
+              <p class="card-kicker">Зворотний зв’язок</p>
+              <h3>Повідомити та отримати допомогу</h3>
+            </div>
+          </div>
+          <ul class="service-links">
+            <li>
+              <a href="https://www.vmr.gov.ua/1560">
+                <span><strong>Цілодобова варта 1560</strong><small>Повідомити про аварійну або комунальну проблему</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.vmr.gov.ua/ChatBot">
+                <span><strong>Муніципальний чат-бот «СВОЇ»</strong><small>Міські сервіси та консультації у месенджері</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://map.vmr.gov.ua/">
+                <span><strong>Мапа звернень</strong><small>Позначити проблему в конкретному місці на мапі</small></span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="directions" aria-labelledby="directions-title">
-      <div class="section-heading">
-        <p class="eyebrow">Основні напрями</p>
-        <h2 id="directions-title">Технології для зручного міста</h2>
+    <section class="more-services" aria-labelledby="more-title">
+      <div>
+        <p class="eyebrow">Більше можливостей</p>
+        <h2 id="more-title">Не знайшли потрібний сервіс?</h2>
+        <p>Перегляньте повний цифровий простір міста або скористайтеся пошуком на офіційному сайті Вінницької міської ради.</p>
       </div>
-      <div class="cards">
-        <article class="card">
-          <span class="number">01</span>
-          <h3>Електронні сервіси</h3>
-          <p>Зручний онлайн-доступ до міських послуг та корисної інформації.</p>
-        </article>
-        <article class="card">
-          <span class="number">02</span>
-          <h3>Відкриті дані</h3>
-          <p>Відкритість, прозорість і повторне використання публічної інформації.</p>
-        </article>
-        <article class="card">
-          <span class="number">03</span>
-          <h3>Цифрові проєкти</h3>
-          <p>Нові інструменти для розвитку громади та взаємодії з мешканцями.</p>
-        </article>
+      <div class="more-actions">
+        <a class="button button-light" href="https://www.vmr.gov.ua/Digital-Vinnytsia">Цифровий простір міста</a>
+        <a class="button button-outline-light" href="https://www.vmr.gov.ua/">Перейти на vmr.gov.ua</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year">2026</span> Вінницька міська рада</p>
-    <a href="https://www.vmr.gov.ua/">vmr.gov.ua</a>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div>
+        <strong>Цифрова Вінниця</strong>
+        <p>Офіційний каталог електронних сервісів Вінницької міської територіальної громади.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.vmr.gov.ua/">Вінницька міська рада</a>
+        <a href="mailto:dit@vmr.gov.ua">dit@vmr.gov.ua</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Вінницька міська рада</span>
+      <span>Україна, м. Вінниця</span>
+    </div>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

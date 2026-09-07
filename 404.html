@@ -3,18 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#b51f2c">
   <title>Сторінку не знайдено — Цифрова Вінниця</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <main class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">Помилка 404</p>
-      <h1>Сторінку не знайдено</h1>
-      <p class="lead">Можливо, адресу введено з помилкою або сторінку переміщено.</p>
-      <a class="primary-link" href="/">На головну</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Цифрова Вінниця — головна сторінка">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-copy"><strong>Цифрова Вінниця</strong><small>Електронні сервіси громади</small></span>
+      </a>
+      <nav class="top-nav" aria-label="Основна навігація">
+        <a class="nav-accent" href="https://www.vmr.gov.ua/">Сайт міської ради</a>
+      </nav>
     </div>
-    <div class="hero-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  </header>
+  <main>
+    <section class="intro error-page" aria-labelledby="error-title">
+      <div class="intro-copy">
+        <p class="eyebrow">Помилка 404</p>
+        <h1 id="error-title">Сторінку не знайдено</h1>
+        <p class="intro-text">Можливо, адресу введено з помилкою або сторінку переміщено.</p>
+        <div class="intro-actions">
+          <a class="button button-primary" href="/">Повернутися на головну</a>
+        </div>
+      </div>
+      <aside class="misto-card" aria-label="Електронні сервіси Вінниці">
+        <p class="official-label">digital.gov.ua</p>
+        <h2>Усі міські сервіси залишаються поруч</h2>
+        <a class="misto-link" href="/#services">Переглянути каталог <span aria-hidden="true">→</span></a>
+      </aside>
+    </section>
   </main>
 </body>
 </html>
