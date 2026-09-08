@@ -184,9 +184,6 @@ main,
 
 .intro {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(340px, 0.72fr);
-  gap: 0;
   overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -214,7 +211,7 @@ main,
 .intro-copy {
   position: relative;
   z-index: 0;
-  min-height: 520px;
+  min-height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,96 +335,150 @@ h1 {
   border-color: var(--ink);
 }
 
-.misto-card {
+.misto-banner {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 270px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 410px);
+  align-items: stretch;
+  margin-top: 20px;
   overflow: hidden;
-  padding: clamp(36px, 5vw, 62px);
-  color: #fff;
-  background: var(--ink);
+  color: var(--ink);
+  background: linear-gradient(100deg, #dff3ff 0%, #f5fbff 58%, #ffffff 100%);
+  border: 1px solid rgba(23, 112, 200, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 14px 36px rgba(23, 112, 200, 0.08);
   isolation: isolate;
 }
 
-.misto-card::before,
-.misto-card::after {
+.misto-banner::before {
   position: absolute;
   z-index: -1;
+  top: -150px;
+  left: 42%;
+  width: 330px;
+  height: 330px;
   content: "";
+  background: rgba(128, 181, 224, 0.16);
   border-radius: 50%;
   pointer-events: none;
 }
 
-.misto-card::before {
-  width: 280px;
-  height: 280px;
-  top: -130px;
-  right: -110px;
-  background: rgba(198, 26, 39, 0.96);
-}
-
-.misto-card::after {
-  width: 160px;
-  height: 160px;
-  right: 35px;
-  bottom: -105px;
-  border: 34px solid rgba(255, 255, 255, 0.1);
-}
-
-.misto-topline {
+.misto-banner-copy {
+  position: relative;
+  z-index: 2;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 70px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px clamp(28px, 4.5vw, 56px);
 }
 
-.official-label {
-  max-width: 150px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
+.misto-brandline {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 13px;
+}
+
+.misto-logo {
+  width: 128px;
+  height: auto;
+  display: block;
+}
+
+.misto-brandline span {
+  padding-left: 18px;
+  color: var(--ink-soft);
+  border-left: 1px solid rgba(23, 22, 26, 0.22);
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
-.misto-wordmark {
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.misto-card h2 {
-  max-width: 440px;
-  margin-bottom: 18px;
-  font-size: clamp(30px, 4vw, 46px);
+.misto-banner h2 {
+  max-width: 680px;
+  margin-bottom: 10px;
+  font-size: clamp(28px, 3.2vw, 40px);
   letter-spacing: -0.035em;
 }
 
-.misto-card p {
-  margin: 0 0 34px;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 17px;
+.misto-banner p {
+  max-width: 760px;
+  margin: 0 0 20px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.48;
 }
 
-.misto-link {
-  align-self: flex-start;
+.misto-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.store-button {
+  min-height: 36px;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.store-button:hover {
+  opacity: 0.84;
+  transform: translateY(-2px);
+}
+
+.store-button img {
+  display: block;
+  width: auto;
+  height: 38px;
+}
+
+.misto-details {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 5px;
+  color: var(--brand-blue);
+  font-size: 14px;
   font-weight: 800;
   text-underline-offset: 5px;
 }
 
-.misto-link span {
-  font-size: 22px;
+.misto-details span {
+  font-size: 20px;
   transition: transform 0.2s ease;
 }
 
-.misto-link:hover span {
+.misto-details:hover span {
   transform: translateX(4px);
+}
+
+.misto-visual {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.misto-visual::before {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  content: "";
+  background: linear-gradient(90deg, #f8fcff, rgba(248, 252, 255, 0));
+  pointer-events: none;
+}
+
+.misto-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 46%;
 }
 
 .category-nav {
@@ -753,16 +804,12 @@ h1 {
     display: none;
   }
 
-  .intro {
-    grid-template-columns: 1fr;
+  .misto-banner {
+    grid-template-columns: minmax(0, 1fr) 330px;
   }
 
-  .misto-card {
-    min-height: 390px;
-  }
-
-  .misto-topline {
-    margin-bottom: 45px;
+  .misto-banner-copy {
+    padding-inline: 32px;
   }
 
   .more-services {
@@ -836,9 +883,30 @@ h1 {
     width: 100%;
   }
 
-  .misto-card {
-    min-height: 360px;
-    padding: 32px 24px 36px;
+  .misto-banner {
+    grid-template-columns: 1fr;
+    border-radius: 17px;
+  }
+
+  .misto-banner-copy {
+    padding: 28px 24px 24px;
+  }
+
+  .misto-visual {
+    height: 210px;
+  }
+
+  .misto-visual::before {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: auto;
+    height: 55px;
+    background: linear-gradient(180deg, #f8fcff, rgba(248, 252, 255, 0));
+  }
+
+  .misto-visual img {
+    object-position: center 43%;
   }
 
   .category-nav {
@@ -923,8 +991,32 @@ h1 {
     font-size: 17px;
   }
 
-  .misto-card {
+  .misto-banner-copy {
     padding-inline: 20px;
+  }
+
+  .misto-brandline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .misto-brandline span {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .misto-actions {
+    align-items: stretch;
+  }
+
+  .store-button {
+    flex: 0 0 auto;
+  }
+
+  .misto-details {
+    width: 100%;
+    margin: 5px 0 0;
   }
 
   .service-card {
