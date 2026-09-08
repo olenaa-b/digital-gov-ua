@@ -333,8 +333,20 @@ h1 {
   border-color: var(--line);
 }
 
+.button-secondary2 {
+  color: var(--ink);
+  background: #fff;
+  border-color: var(--line);
+  padding: 13px 19px;
+  border-radius: 10px;
+}
+
 .button-secondary:hover {
   border-color: var(--ink);
+}
+
+.button-secondary:hover {
+  border-color: var(--line);
 }
 
 .misto-banner {
