@@ -119,8 +119,9 @@ main,
 
 .council-logo {
   display: block;
-  width: 218px;
-  height: auto;
+  width: 174px !important;
+  max-width: 174px;
+  height: auto !important;
   flex: 0 0 auto;
 }
 
@@ -696,9 +697,10 @@ h1 {
   gap: 22px;
 }
 
-.footer-brand img {
-  width: 188px;
-  height: auto;
+.footer-brand .footer-council-logo {
+  width: 160px !important;
+  max-width: 160px;
+  height: auto !important;
   flex: 0 0 auto;
 }
 
@@ -743,7 +745,8 @@ h1 {
   }
 
   .council-logo {
-    width: 198px;
+    width: 164px !important;
+    max-width: 164px;
   }
 
   .top-nav a:not(.nav-accent) {
@@ -793,7 +796,8 @@ h1 {
   }
 
   .council-logo {
-    width: 174px;
+    width: 150px !important;
+    max-width: 150px;
   }
 
   .top-nav .nav-accent {
@@ -888,14 +892,16 @@ h1 {
     gap: 18px;
   }
 
-  .footer-brand img {
-    width: 180px;
+  .footer-brand .footer-council-logo {
+    width: 150px !important;
+    max-width: 150px;
   }
 }
 
 @media (max-width: 420px) {
   .council-logo {
-    width: 148px;
+    width: 132px !important;
+    max-width: 132px;
   }
 
   .top-nav .nav-accent {
