@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Каталог електронних сервісів Вінницької міської територіальної громади: транспорт, медицина, освіта, адміністративні послуги, громадська участь, правнича допомога, відкриті дані та міські мапи.">
-  <meta name="theme-color" content="#b51f2c">
+  <meta name="theme-color" content="#c61a27">
   <title>Цифрова Вінниця — електронні сервіси громади</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/vmr-mark.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/brand/vmr-mark.png">
+  <link rel="preload" href="assets/fonts/vinnytsia-sans-regular.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/vinnytsia-sans-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +18,8 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/" aria-label="Цифрова Вінниця — головна сторінка">
-        <span class="brand-mark" aria-hidden="true">V</span>
+        <img class="council-logo" src="assets/brand/vmr-logo.png" alt="Вінницька міська рада" width="900" height="313">
+        <span class="brand-divider" aria-hidden="true"></span>
         <span class="brand-copy">
           <strong>Цифрова Вінниця</strong>
           <small>Електронні сервіси громади</small>
@@ -32,6 +36,10 @@
   <main>
     <section class="intro" aria-labelledby="page-title">
       <div class="intro-copy">
+        <div class="brand-display" aria-hidden="true">
+          <span>Digital</span>
+          <span>Vinnytsia</span>
+        </div>
         <p class="eyebrow">Вінницька міська рада</p>
         <h1 id="page-title">Міські сервіси в одному місці</h1>
         <p class="intro-text">Транспорт, освіта, медицина, адміністративні послуги, участь у житті громади, правнича допомога та інші цифрові можливості Вінниці.</p>
@@ -470,9 +478,12 @@
 
   <footer class="site-footer">
     <div class="footer-main">
-      <div>
-        <strong>Цифрова Вінниця</strong>
-        <p>Офіційний каталог електронних сервісів Вінницької міської територіальної громади.</p>
+      <div class="footer-brand">
+        <img src="assets/brand/vmr-logo.png" alt="Вінницька міська рада" width="900" height="313">
+        <div>
+          <strong>Цифрова Вінниця</strong>
+          <p>Каталог електронних сервісів Вінницької міської територіальної громади.</p>
+        </div>
       </div>
       <div class="footer-links">
         <a href="https://www.vmr.gov.ua/">Вінницька міська рада</a>
