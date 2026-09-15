@@ -436,8 +436,8 @@ h1 {
 .store-button img {
   display: block;
   width: auto;
-  height: 48px;
-  margin: 10px 0px -50px 0px;
+  height: 36px;
+  margin: 0;
 }
 
 .misto-details {
@@ -889,16 +889,33 @@ h1 {
   }
 
   .misto-banner {
+    min-height: 0;
     grid-template-columns: 1fr;
     border-radius: 17px;
   }
 
   .misto-banner-copy {
-    padding: 28px 24px 24px;
+    padding: 24px 20px 18px;
+  }
+
+  .misto-banner .button-secondary2 {
+    width: auto;
+    min-height: 44px;
+    display: inline-flex;
+    margin-bottom: 16px;
+    padding: 8px 20px;
+  }
+
+  .misto-actions {
+    flex-wrap: nowrap;
+    gap: 12px;
   }
 
   .misto-visual {
-    height: 210px;
+    height: 190px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   .misto-visual::before {
@@ -911,7 +928,11 @@ h1 {
   }
 
   .misto-visual img {
-    object-position: center 43%;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
   }
 
   .category-nav {
@@ -1001,22 +1022,40 @@ h1 {
   }
 
   .misto-brandline {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .misto-logo {
+    width: 108px;
   }
 
   .misto-brandline span {
-    padding-left: 0;
-    border-left: 0;
+    padding-left: 12px;
+    border-left: 1px solid rgba(23, 22, 26, 0.22);
+  }
+
+  .Vinnytsia-logo {
+    width: 104px;
+    height: auto;
+    display: block;
   }
 
   .misto-actions {
-    align-items: stretch;
+    align-items: center;
   }
 
   .store-button {
     flex: 0 0 auto;
+  }
+
+  .store-button img {
+    height: 34px;
+  }
+
+  .misto-visual {
+    height: 180px;
   }
 
   .misto-details {
