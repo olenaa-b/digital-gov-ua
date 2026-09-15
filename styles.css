@@ -437,7 +437,7 @@ h1 {
   display: block;
   width: auto;
   height: 36px;
-  margin: 0;
+  margin-top: 10px;
 }
 
 .misto-details {
