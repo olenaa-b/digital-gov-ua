@@ -912,10 +912,7 @@ h1 {
   }
 
   .misto-visual {
-    height: 190px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    display: none;
   }
 
   .misto-visual::before {
